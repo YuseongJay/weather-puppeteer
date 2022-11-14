@@ -1,0 +1,11 @@
+{
+  "name": "weather-puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "puppeteer": "^16.2.0",
+    "sharp": "^0.30.7"
+  }
+}
