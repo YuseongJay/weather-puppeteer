@@ -20,14 +20,15 @@ const waitForTimeout = (milliseconds) =>
   await page.emulate(iPhone13)
   await page.setViewport({ width, height })
   await page.setGeolocation({
-    latitude: 37.541812699442,
-    longitude: 127.04804368914,
+    latitude: 37.546549,
+    longitude: 127.048458,
   })
 
   page.setDefaultNavigationTimeout(100000)
   await page.goto("https://www.weather.go.kr/w/image/vshrt/rain.do", {
     waitUntil: "networkidle0",
   })
+  await page.reload()
 
   await page.click("button.ol-zoom-in", { delay: 500 })
   await page.click("button.ol-zoom-in", { delay: 500 })
