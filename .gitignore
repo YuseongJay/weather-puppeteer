@@ -1,3 +1,12 @@
 node_modules
+dist
+
+venv
+
+.DS_Store
 
 *.gif
+*.webp
+*.avif
+*.heic
+*.heif
